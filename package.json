@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node bin/server.js",
+    "start": "node server.js",
     "start-dev": "ng serve",
     "postinstall": "ng build --aot -prod",
     "build": "ng build",
@@ -11,7 +11,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^6.0.3",
     "@angular/common": "^6.0.3",
