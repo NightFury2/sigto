@@ -1,0 +1,41 @@
+<div class="row home">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 center-xs">
+   <div class="row">
+     <div class="col-xs-12 page-info" [ngClass]="{'disable-page-info': inputFocusClass}">
+       <div class="row">
+         <div class="col-xs-12">
+           <h1>Find rapid a tool for the crimp contacts</h1>
+         </div>
+         <div class="col-xs-12">
+           <label> Enter a terminal part number below to find the right crimping tools</label>
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-12 col-md-10 col-md-offset-1" style="margin-top: 30px">
+       <div class="row">
+         <div class="input-field-box col-xs">
+           <i class="material-icons prefix" >search</i>
+           <input (focus)="inputFocusClass = true"
+                  (blur)="inputFocusClass = false; null"
+                  [ngClass]="{'inpust_active': inputFocusClass}"
+                  placeholder="Enter a terminal part number"
+                  id="find_item_input" type="text" class="validate">
+           <div class="row search-value">
+             <div class="col-xs-12 search-value-container">
+               <div class="search-value-container-item"
+                    *ngFor="let val of searchValue"
+                    [ngClass]="{'search-value-container-item_active': inputFocusClass}"
+               >
+                 {{val.name}}
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="right col-xs-2" [ngClass]="{'disable-button': inputFocusClass}">
+           <button class="btn z-depth-1" type="submit" >Find item</button>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+</div>

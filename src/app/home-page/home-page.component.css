@@ -1,0 +1,72 @@
+.home {
+  padding-top: 100px;
+}
+.page-info {
+  webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+.input-field-box {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #A6AABD;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: calc(100% - 150px);
+}
+.search-value {
+  top: 50px;
+  width:100%;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #A6AABD;
+}
+.search-value-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.search-value-container-item {
+  padding: 10px 20px;
+  display: none;
+}
+.search-value-container div {
+  background-color: white;
+}
+.input-field-box i {
+  height: 100%;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  background-color: white;
+}
+.input-field-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  webkit-transition: all .2s ease-out;
+  transition: all 2s ease-out;
+  background-color: white;
+}
+.input-field-box input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #A6AABD;
+}
+.disable-button, .disable-page-info {
+  display: none;
+}
+.search-value-container-item_active {
+  display: flex;
+}
+.input_active {
+  width: 100%;
+}
